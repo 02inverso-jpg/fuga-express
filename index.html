@@ -335,6 +335,1791 @@ h3 {
 }
 
 /* =========================
+   ADMIN
+========================= */
+
+.admin-link {
+    display: block;
+    text-align: center;
+    margin-top: 18px;
+    color: #777;
+    font-size: 13px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#adminLogin,
+#adminPanel {
+    display: none;
+}
+
+.admin-table-wrap {
+    overflow-x: auto;
+    margin-top: 20px;
+}
+
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 850px;
+    font-size: 13px;
+}
+
+.admin-table th,
+.admin-table td {
+    border: 1px solid #e1e1e7;
+    padding: 10px;
+    text-align: left;
+    vertical-align: top;
+}
+
+.admin-table th {
+    background: #f4f0ff;
+    color: #6735ff;
+}
+
+.admin-respuestas {
+    white-space: pre-line;
+    max-width: 330px;
+}
+
+.admin-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.admin-btn {
+    width: auto;
+    padding: 11px 16px;
+    margin-top: 0;
+}
+
+.admin-contador {
+    color: #666;
+    margin-top: 5px;
+}
+
+.admin-vacio {
+    padding: 25px;
+    text-align: center;
+    color: #666;
+    background: #f7f7f8;
+    border-radius: 12px;
+    margin-top: 20px;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:600px) {
+
+    .pulso-wrapper {
+        padding: 15px 10px;
+    }
+
+    .pulso-card {
+        padding: 23px 18px;
+        border-radius: 17px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+}
+
+</style>
+</head>
+
+
+<body>
+
+<div class="pulso-wrapper">
+
+<div class="pulso-card">
+
+
+<!-- =================================================
+     PASO 1 - ENCUESTA
+================================================= -->
+
+<section id="encuesta">
+
+    <span class="pulso-tag">
+        DIAGNÓSTICO EXPRESS
+    </span>
+
+    <div class="progreso">
+        <div class="progreso-barra" id="barra"></div>
+    </div>
+
+    <h1>
+        ¿Dónde podría estar perdiendo oportunidades tu negocio?
+    </h1>
+
+    <p class="descripcion">
+        Marca todo lo que sucede actualmente en tu negocio.
+        Analizaremos tus respuestas para detectar dónde podría
+        estar la principal fuga de oportunidades.
+    </p>
+
+
+    <div class="opciones">
+
+        <div class="opcion">
+            <input type="checkbox" id="r1"
+            value="No tenemos claro qué tipo de clientes queremos atraer.">
+            <label for="r1">
+                <span class="check"></span>
+                <span>
+                    No tenemos claro qué tipo de clientes queremos atraer.
+                </span>
+            </label>
+        </div>
+
+
+        <div class="opcion">
+            <input type="checkbox" id="r2"
+            value="Generamos interesados, pero muchos no tienen intención real de compra.">
+            <label for="r2">
+                <span class="check"></span>
+                <span>
+                    Generamos interesados, pero muchos no tienen intención real de compra.
+                </span>
+            </label>
+        </div>
+
+
+        <div class="opcion">
+            <input type="checkbox" id="r3"
+            value="A veces tardamos demasiado en contestar.">
+            <label for="r3">
+                <span class="check"></span>
+                <span>
+                    A veces tardamos demasiado en contestar.
+                </span>
+            </label>
+        </div>
+
+
+        <div class="opcion">
+            <input type="checkbox" id="r4"
+            value="Los prospectos preguntan y después dejan de contestar.">
+            <label for="r4">
+                <span class="check"></span>
+                <span>
+                    Los prospectos preguntan y después dejan de contestar.
+                </span>
+            </label>
+        </div>
+
+
+        <div class="opcion">
+            <input type="checkbox" id="r5"
+            value="No tenemos un proceso claro para identificar qué necesita realmente cada prospecto.">
+            <label for="r5">
+                <span class="check"></span>
+                <span>
+                    No tenemos un proceso claro para identificar
+                    qué necesita realmente cada prospecto.
+                </span>
+            </label>
+        </div>
+
+
+        <div class="opcion">
+            <input type="checkbox" id="r6"
+            value="Todos reciben prácticamente la misma atención o información.">
+            <label for="r6">
+                <span class="check"></span>
+                <span>
+                    Todos reciben prácticamente la misma atención
+                    o información.
+                </span>
+            </label>
+        </div>
+
+
+        <div class="opcion">
+            <input type="checkbox" id="r7"
+            value="Cuando alguien no compra, muchas veces ya no volvemos a contactarlo.">
+            <label for="r7">
+                <span class="check"></span>
+                <span>
+                    Cuando alguien no compra, muchas veces ya no
+                    volvemos a contactarlo.
+                </span>
+            </label>
+        </div>
+
+
+        <div class="opcion">
+            <input type="checkbox" id="r8"
+            value="No tenemos un seguimiento definido.">
+            <label for="r8">
+                <span class="check"></span>
+                <span>
+                    No tenemos un seguimiento definido.
+                </span>
+            </label>
+        </div>
+
+
+        <div class="opcion">
+            <input type="checkbox" id="r9"
+            value="No sabemos exactamente cuántos prospectos terminan comprando.">
+            <label for="r9">
+                <span class="check"></span>
+                <span>
+                    No sabemos exactamente cuántos prospectos
+                    terminan comprando.
+                </span>
+            </label>
+        </div>
+
+
+        <div class="opcion">
+            <input type="checkbox" id="r10"
+            value="Sentimos que estamos perdiendo ventas, pero no sabemos exactamente dónde.">
+            <label for="r10">
+                <span class="check"></span>
+                <span>
+                    Sentimos que estamos perdiendo ventas, pero
+                    no sabemos exactamente dónde.
+                </span>
+            </label>
+        </div>
+
+    </div>
+
+
+    <button class="btn" id="continuar">
+        Continuar →
+    </button>
+
+    <p class="error" id="errorEncuesta">
+        Selecciona al menos una opción.
+    </p>
+
+</section>
+
+
+<!-- =================================================
+     PASO 2 - DATOS
+================================================= -->
+
+<section id="datos" style="display:none;">
+
+    <span class="pulso-tag">
+        CASI TERMINAMOS
+    </span>
+
+    <h2>
+        ¿A quién le entregamos tu diagnóstico?
+    </h2>
+
+    <p class="descripcion">
+        Déjanos estos datos para identificar tu diagnóstico
+        y poder contactarte en caso de que seas aplicable
+        a nuestra promoción.
+    </p>
+
+
+    <div class="campo">
+
+        <label for="nombre">
+            Nombre
+        </label>
+
+        <input
+            type="text"
+            id="nombre"
+            placeholder="Tu nombre"
+        >
+
+    </div>
+
+
+    <div class="campo">
+
+        <label for="telefono">
+            Teléfono
+        </label>
+
+        <input
+            type="tel"
+            id="telefono"
+            placeholder="10 dígitos"
+        >
+
+    </div>
+
+
+    <div class="campo">
+
+        <label for="empresa">
+            Empresa que representas
+        </label>
+
+        <input
+            type="text"
+            id="empresa"
+            placeholder="Nombre de tu empresa"
+        >
+
+    </div>
+
+
+    <button class="btn" id="analizar">
+        Obtener mi diagnóstico →
+    </button>
+
+    <p class="error" id="errorDatos">
+        Completa todos los campos para continuar.
+    </p>
+
+</section>
+
+
+<!-- =================================================
+     PASO 3 - LOADING
+================================================= -->
+
+<section id="loading">
+
+    <span class="pulso-tag">
+        ANALIZANDO
+    </span>
+
+    <div class="spinner"></div>
+
+    <h2>
+        Analizando tu caso...
+    </h2>
+
+    <p class="loading-text">
+        Estamos revisando las respuestas que seleccionaste
+        para identificar dónde podrías estar perdiendo
+        oportunidades.
+    </p>
+
+</section>
+
+
+<!-- =================================================
+     PASO 4 - RESULTADO
+================================================= -->
+
+<section id="resultado">
+
+    <span class="pulso-tag">
+        TU DIAGNÓSTICO
+    </span>
+
+    <h2 id="tituloResultado">
+        Tu diagnóstico está listo
+    </h2>
+
+
+    <div class="diagnostico">
+
+        <p id="textoDiagnostico"></p>
+
+    </div>
+
+
+    <h3>
+        Principales áreas de oportunidad
+    </h3>
+
+    <div class="areas" id="areasResultado"></div>
+
+
+    <div class="solucion">
+
+        <h3>
+            🚀 ¿Qué puedes hacer?
+        </h3>
+
+        <p id="textoSolucion"></p>
+
+    </div>
+
+
+    <button class="btn" id="terminar">
+        Continuar →
+    </button>
+
+</section>
+
+
+<!-- =================================================
+     PASO 5 - FINAL
+================================================= -->
+
+<section id="final">
+
+    <div class="final-icono">
+        ✓
+    </div>
+
+    <span class="pulso-tag">
+        DIAGNÓSTICO COMPLETADO
+    </span>
+
+    <h2>
+        ¡Gracias por completar tu diagnóstico!
+    </h2>
+
+    <p class="final-texto">
+
+        Hemos registrado tu información y tu diagnóstico.
+
+        <br><br>
+
+        Si tu negocio resulta aplicable a nuestra promoción,
+        <strong>nos pondremos en contacto contigo</strong>
+        para explicarte cómo PULSO puede ayudarte.
+
+        <br><br>
+
+        Mientras tanto, ya tienes una idea más clara de
+        dónde podrían estar perdiéndose algunas de tus
+        oportunidades.
+
+    </p>
+
+</section>
+
+
+
+<!-- =================================================
+     ADMIN - LOGIN
+================================================= -->
+
+<section id="adminLogin">
+
+    <span class="pulso-tag">
+        ADMINISTRACIÓN
+    </span>
+
+    <h2>Acceso administrativo</h2>
+
+    <p class="descripcion">
+        Ingresa tus credenciales para consultar los datos recopilados
+        de los clientes que completaron el formulario.
+    </p>
+
+    <div class="campo">
+        <label for="adminUsuario">Usuario</label>
+        <input type="text" id="adminUsuario" autocomplete="username"
+               placeholder="Usuario">
+    </div>
+
+    <div class="campo">
+        <label for="adminPassword">Contraseña</label>
+        <input type="password" id="adminPassword" autocomplete="current-password"
+               placeholder="Contraseña">
+    </div>
+
+    <button class="btn" id="adminEntrar">
+        Ingresar al panel →
+    </button>
+
+    <p class="error" id="errorAdmin">
+        Usuario o contraseña incorrectos.
+    </p>
+
+    <button class="btn btn-secundario" id="adminVolver">
+        ← Volver al formulario
+    </button>
+
+</section>
+
+
+<!-- =================================================
+     ADMIN - PANEL
+================================================= -->
+
+<section id="adminPanel">
+
+    <div class="admin-header">
+
+        <div>
+            <span class="pulso-tag">
+                PANEL ADMIN
+            </span>
+
+            <h2>Clientes registrados</h2>
+
+            <p class="admin-contador" id="adminContador">
+                Cargando registros...
+            </p>
+        </div>
+
+        <button class="btn admin-btn" id="adminActualizar">
+            Actualizar
+        </button>
+
+    </div>
+
+    <div id="adminContenido"></div>
+
+    <button class="btn btn-secundario" id="adminCerrarSesion">
+        Cerrar sesión
+    </button>
+
+</section>
+
+</div>
+</div>
+
+
+<a class="admin-link" id="abrirAdmin">
+    Acceso administrativo
+</a>
+
+
+<script>
+
+/* =====================================================
+   CONFIGURACIÓN
+===================================================== */
+
+/*
+   Los datos se guardan de forma nativa en localStorage.
+   No se utiliza Google Sheets ni Google Apps Script.
+*/
+
+// Almacenamiento nativo del navegador.
+// Los registros quedan guardados en este mismo sitio/dispositivo.
+const STORAGE_KEY = "pulso_clientes";
+
+/* =====================================================
+   ADMINISTRACIÓN
+   Los registros se consultan directamente desde localStorage.
+   NOTA: las credenciales del frontend no son seguridad de servidor.
+===================================================== */
+
+const ADMIN_USUARIO = "02inverso";
+const ADMIN_PASSWORD = "Sasuke01!";
+
+let adminAutenticado = false;
+
+const adminLogin = document.getElementById("adminLogin");
+const adminPanel = document.getElementById("adminPanel");
+const abrirAdmin = document.getElementById("abrirAdmin");
+const adminEntrar = document.getElementById("adminEntrar");
+const adminVolver = document.getElementById("adminVolver");
+const adminCerrarSesion = document.getElementById("adminCerrarSesion");
+const adminActualizar = document.getElementById("adminActualizar");
+const errorAdmin = document.getElementById("errorAdmin");
+const adminContenido = document.getElementById("adminContenido");
+const adminContador = document.getElementById("adminContador");
+
+abrirAdmin.addEventListener("click", function () {
+    encuesta.style.display = "none";
+    datos.style.display = "none";
+    loading.style.display = "none";
+    resultado.style.display = "none";
+    final.style.display = "none";
+    adminPanel.style.display = "none";
+    adminLogin.style.display = "block";
+    window.scrollTo({ top: 0, behavior: "smooth" });
+});
+
+adminVolver.addEventListener("click", function () {
+    adminLogin.style.display = "none";
+    encuesta.style.display = "block";
+    window.scrollTo({ top: 0, behavior: "smooth" });
+});
+
+adminEntrar.addEventListener("click", function () {
+    const usuario = document.getElementById("adminUsuario").value.trim();
+    const password = document.getElementById("adminPassword").value;
+
+    if (usuario === ADMIN_USUARIO && password === ADMIN_PASSWORD) {
+        adminAutenticado = true;
+        errorAdmin.style.display = "none";
+        adminLogin.style.display = "none";
+        adminPanel.style.display = "block";
+        cargarDatosAdmin();
+        return;
+    }
+
+    errorAdmin.style.display = "block";
+});
+
+document.getElementById("adminPassword").addEventListener("keydown", function (event) {
+    if (event.key === "Enter") {
+        adminEntrar.click();
+    }
+});
+
+adminActualizar.addEventListener("click", function () {
+    if (adminAutenticado) {
+        cargarDatosAdmin();
+    }
+});
+
+adminCerrarSesion.addEventListener("click", function () {
+    adminAutenticado = false;
+
+    document.getElementById("adminUsuario").value = "";
+    document.getElementById("adminPassword").value = "";
+
+    adminPanel.style.display = "none";
+    adminLogin.style.display = "block";
+    adminContenido.innerHTML = "";
+    adminContador.textContent = "Sesión cerrada.";
+
+    window.scrollTo({ top: 0, behavior: "smooth" });
+});
+
+
+function cargarDatosAdmin() {
+
+    if (!adminAutenticado) return;
+
+    adminContador.textContent = "Cargando registros...";
+    adminContenido.innerHTML = `
+        <div class="admin-vacio">
+            Consultando los registros...
+        </div>
+    `;
+
+    try {
+
+        const registrosGuardados =
+            localStorage.getItem(STORAGE_KEY);
+
+        const registros = registrosGuardados
+            ? JSON.parse(registrosGuardados)
+            : [];
+
+        mostrarDatosAdmin(registros);
+
+    } catch (error) {
+
+        console.error("Error leyendo registros:", error);
+
+        adminContador.textContent = "Error al leer los registros.";
+
+        adminContenido.innerHTML = `
+            <div class="admin-vacio">
+                No se pudieron leer los registros guardados.
+            </div>
+        `;
+    }
+}
+
+function mostrarDatosAdmin(registros) {
+
+    adminContador.textContent =
+        registros.length === 1
+            ? "1 cliente registrado"
+            : `${registros.length} clientes registrados`;
+
+    if (registros.length === 0) {
+        adminContenido.innerHTML = `
+            <div class="admin-vacio">
+                Todavía no hay clientes registrados.
+            </div>
+        `;
+        return;
+    }
+
+    const filas = registros.map((registro, indice) => {
+
+        const fecha =
+            registro.fecha ||
+            registro.timestamp ||
+            registro.fechaRegistro ||
+            "—";
+
+        const nombre = registro.nombre || "—";
+        const telefono = registro.telefono || "—";
+        const empresa = registro.empresa || "—";
+        const diagnostico = registro.diagnostico || "—";
+
+        let respuestas = registro.respuestas || "—";
+        let areas = registro.areas || "—";
+
+        if (Array.isArray(respuestas)) {
+            respuestas = respuestas.join("\n• ");
+        }
+
+        if (Array.isArray(areas)) {
+            areas = areas.join("\n• ");
+        }
+
+        return `
+            <tr>
+                <td>${indice + 1}</td>
+                <td>${escaparHTML(fecha)}</td>
+                <td>${escaparHTML(nombre)}</td>
+                <td>${escaparHTML(telefono)}</td>
+                <td>${escaparHTML(empresa)}</td>
+                <td>${escaparHTML(diagnostico)}</td>
+                <td class="admin-respuestas">${escaparHTML(respuestas)}</td>
+                <td class="admin-respuestas">${escaparHTML(areas)}</td>
+            </tr>
+        `;
+
+    }).join("");
+
+    adminContenido.innerHTML = `
+        <div class="admin-table-wrap">
+
+            <table class="admin-table">
+
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Fecha</th>
+                        <th>Nombre</th>
+                        <th>Teléfono</th>
+                        <th>Empresa</th>
+                        <th>Diagnóstico</th>
+                        <th>Respuestas</th>
+                        <th>Áreas</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    ${filas}
+                </tbody>
+
+            </table>
+
+        </div>
+    `;
+}
+
+
+function escaparHTML(valor) {
+
+    return String(valor)
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#039;");
+
+}
+
+
+
+/* =====================================================
+   VARIABLES
+===================================================== */
+
+let respuestasSeleccionadas = [];
+
+let diagnosticoActual = null;
+
+
+/* =====================================================
+   ELEMENTOS
+===================================================== */
+
+const encuesta = document.getElementById("encuesta");
+const datos = document.getElementById("datos");
+const loading = document.getElementById("loading");
+const resultado = document.getElementById("resultado");
+const final = document.getElementById("final");
+
+const continuar = document.getElementById("continuar");
+const analizar = document.getElementById("analizar");
+const terminar = document.getElementById("terminar");
+
+
+/* =====================================================
+   PASO 1
+===================================================== */
+
+continuar.addEventListener("click", function() {
+
+    const seleccionadas =
+        document.querySelectorAll(
+            '.opciones input[type="checkbox"]:checked'
+        );
+
+    if (seleccionadas.length === 0) {
+
+        document.getElementById("errorEncuesta").style.display =
+            "block";
+
+        return;
+    }
+
+
+    respuestasSeleccionadas =
+        Array.from(seleccionadas).map(
+            opcion => opcion.value
+        );
+
+
+    document.getElementById("errorEncuesta").style.display =
+        "none";
+
+
+    encuesta.style.display = "none";
+
+    datos.style.display = "block";
+
+    document.getElementById("barra").style.width = "50%";
+
+});
+
+
+/* =====================================================
+   PASO 2
+===================================================== */
+
+analizar.addEventListener("click", async function() {
+
+    const nombre =
+        document.getElementById("nombre").value.trim();
+
+    const telefono =
+        document.getElementById("telefono").value.trim();
+
+    const empresa =
+        document.getElementById("empresa").value.trim();
+
+
+    if (!nombre || !telefono || !empresa) {
+
+        document.getElementById("errorDatos").style.display =
+            "block";
+
+        return;
+    }
+
+
+    document.getElementById("errorDatos").style.display =
+        "none";
+
+
+    datos.style.display = "none";
+
+    loading.style.display = "block";
+
+    document.getElementById("barra").style.width = "75%";
+
+
+    /*
+    =====================================================
+    GENERAR DIAGNÓSTICO
+    =====================================================
+    */
+
+    diagnosticoActual =
+        generarDiagnostico(respuestasSeleccionadas);
+
+
+    /*
+    =====================================================
+    MOSTRAR RESULTADO
+    =====================================================
+    */
+
+    setTimeout(async function() {
+
+        mostrarDiagnostico(diagnosticoActual);
+
+
+        /*
+        =================================================
+        GUARDAR CONTACTO
+        =================================================
+        */
+
+        await guardarContacto({
+
+            nombre: nombre,
+
+            telefono: telefono,
+
+            empresa: empresa,
+
+            respuestas: respuestasSeleccionadas,
+
+            diagnostico:
+                diagnosticoActual.titulo,
+
+            areas:
+                diagnosticoActual.areas.map(
+                    area => area.nombre
+                )
+
+        });
+
+
+        loading.style.display = "none";
+
+        resultado.style.display = "block";
+
+        document.getElementById("barra").style.width =
+            "100%";
+
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+
+    }, 1800);
+
+});
+
+
+/* =====================================================
+   GENERADOR DE DIAGNÓSTICO
+===================================================== */
+
+function generarDiagnostico(respuestas) {
+
+
+    const problemas = [];
+
+
+    /*
+    ------------------------------
+    ATRACCIÓN
+    ------------------------------
+    */
+
+    if (
+        respuestas.some(r =>
+            r.includes("No tenemos claro qué tipo de clientes")
+        )
+    ) {
+
+        problemas.push({
+
+            nombre: "Atracción de clientes",
+
+            peso: 2,
+
+            texto:
+                "No existe suficiente claridad sobre el tipo de cliente que realmente quieren atraer."
+
+        });
+
+    }
+
+
+    /*
+    ------------------------------
+    CALIFICACIÓN
+    ------------------------------
+    */
+
+    if (
+        respuestas.some(r =>
+            r.includes("muchos no tienen intención real")
+        )
+    ) {
+
+        problemas.push({
+
+            nombre: "Calificación de prospectos",
+
+            peso: 4,
+
+            texto:
+                "Están generando interesados, pero algunos pueden no tener una intención real de compra."
+
+        });
+
+    }
+
+
+    /*
+    ------------------------------
+    RESPUESTA
+    ------------------------------
+    */
+
+    if (
+        respuestas.some(r =>
+            r.includes("tardamos demasiado")
+        )
+    ) {
+
+        problemas.push({
+
+            nombre: "Velocidad de respuesta",
+
+            peso: 5,
+
+            texto:
+                "Algunos prospectos pueden estar esperando demasiado antes de recibir atención."
+
+        });
+
+    }
+
+
+    /*
+    ------------------------------
+    CONVERSACIÓN
+    ------------------------------
+    */
+
+    if (
+        respuestas.some(r =>
+            r.includes("después dejan de contestar")
+        )
+    ) {
+
+        problemas.push({
+
+            nombre: "Continuidad de conversaciones",
+
+            peso: 4,
+
+            texto:
+                "Algunas conversaciones comienzan, pero terminan antes de convertirse en una oportunidad real."
+
+        });
+
+    }
+
+
+    /*
+    ------------------------------
+    NECESIDADES
+    ------------------------------
+    */
+
+    if (
+        respuestas.some(r =>
+            r.includes("identificar qué necesita")
+        )
+    ) {
+
+        problemas.push({
+
+            nombre: "Comprensión del prospecto",
+
+            peso: 4,
+
+            texto:
+                "No existe un proceso definido para conocer las necesidades específicas de cada prospecto."
+
+        });
+
+    }
+
+
+    /*
+    ------------------------------
+    PERSONALIZACIÓN
+    ------------------------------
+    */
+
+    if (
+        respuestas.some(r =>
+            r.includes("misma atención")
+        )
+    ) {
+
+        problemas.push({
+
+            nombre: "Personalización",
+
+            peso: 3,
+
+            texto:
+                "Los prospectos reciben prácticamente la misma atención aunque sus necesidades pueden ser diferentes."
+
+        });
+
+    }
+
+
+    /*
+    ------------------------------
+    REACTIVACIÓN
+    ------------------------------
+    */
+
+    if (
+        respuestas.some(r =>
+            r.includes("ya no volvemos a contactarlo")
+        )
+    ) {
+
+        problemas.push({
+
+            nombre: "Reactivación",
+
+            peso: 5,
+
+            texto:
+                "Los prospectos que no compran inicialmente pueden quedar fuera del proceso comercial."
+
+        });
+
+    }
+
+
+    /*
+    ------------------------------
+    SEGUIMIENTO
+    ------------------------------
+    */
+
+    if (
+        respuestas.some(r =>
+            r.includes("seguimiento definido")
+        )
+    ) {
+
+        problemas.push({
+
+            nombre: "Seguimiento",
+
+            peso: 5,
+
+            texto:
+                "No existe un proceso claro y constante para continuar las conversaciones después del primer contacto."
+
+        });
+
+    }
+
+
+    /*
+    ------------------------------
+    MEDICIÓN
+    ------------------------------
+    */
+
+    if (
+        respuestas.some(r =>
+            r.includes("cuántos prospectos")
+        )
+    ) {
+
+        problemas.push({
+
+            nombre: "Medición de conversiones",
+
+            peso: 3,
+
+            texto:
+                "No tienen suficiente visibilidad sobre cuántos prospectos realmente terminan convirtiéndose en clientes."
+
+        });
+
+    }
+
+
+    /*
+    ------------------------------
+    VISIBILIDAD
+    ------------------------------
+    */
+
+    if (
+        respuestas.some(r =>
+            r.includes("perdiendo ventas")
+        )
+    ) {
+
+        problemas.push({
+
+            nombre: "Visibilidad comercial",
+
+            peso: 4,
+
+            texto:
+                "Existe la percepción de que se pierden ventas, pero no está claro exactamente en qué parte del proceso sucede."
+
+        });
+
+    }
+
+
+    /*
+    =====================================================
+    ORDENAR
+    =====================================================
+    */
+
+    problemas.sort((a,b) => b.peso - a.peso);
+
+
+    /*
+    =====================================================
+    DIAGNÓSTICO
+    =====================================================
+    */
+
+    let titulo = "";
+    let texto = "";
+    let solucion = "";
+
+
+    if (problemas.length === 0) {
+
+        titulo =
+            "Tu diagnóstico está listo";
+
+        texto =
+            "No encontramos suficiente información para identificar una fuga específica.";
+
+        solucion =
+            "El siguiente paso sería analizar con mayor detalle cómo llegan, se atienden y se convierten tus prospectos.";
+
+    }
+
+    else {
+
+        const principales =
+            problemas.slice(0,3);
+
+
+        /*
+        ================================================
+        SEGUIMIENTO + RESPUESTA
+        ================================================
+        */
+
+        if (
+            tieneProblema(problemas, "Seguimiento") &&
+            tieneProblema(problemas, "Velocidad de respuesta")
+        ) {
+
+            titulo =
+                "Tu principal fuga parece estar después de que llega el prospecto";
+
+            texto =
+                "Detectamos señales de que algunas oportunidades pueden estar perdiéndose por una combinación de velocidad de respuesta y falta de seguimiento. El problema puede no estar únicamente en conseguir prospectos, sino en lo que sucede después del primer contacto.";
+
+            solucion =
+                "Una automatización puede ayudarte a responder inmediatamente, mantener activa la conversación y dar seguimiento sin depender de que alguien recuerde hacerlo manualmente.";
+
+        }
+
+
+        /*
+        ================================================
+        CALIFICACIÓN
+        ================================================
+        */
+
+        else if (
+            tieneProblema(problemas, "Calificación de prospectos") &&
+            tieneProblema(problemas, "Comprensión del prospecto")
+        ) {
+
+            titulo =
+                "Tu mayor oportunidad está en conocer y calificar mejor a tus prospectos";
+
+            texto =
+                "Estás generando interesados, pero necesitas distinguir mejor quién realmente tiene potencial y qué necesita cada persona. Sin esa información, es fácil invertir tiempo en oportunidades que todavía no están listas para comprar.";
+
+            solucion =
+                "Un proceso inteligente de calificación puede identificar necesidades, intención de compra y contexto de cada prospecto para adaptar la conversación.";
+
+        }
+
+
+        /*
+        ================================================
+        REACTIVACIÓN + SEGUIMIENTO
+        ================================================
+        */
+
+        else if (
+            tieneProblema(problemas, "Reactivación") &&
+            tieneProblema(problemas, "Seguimiento")
+        ) {
+
+            titulo =
+                "Podrías estar dejando oportunidades atrás";
+
+            texto =
+                "Detectamos una fuga importante en el seguimiento posterior al primer contacto. Un prospecto que no compra inmediatamente no necesariamente está perdido, pero si nadie vuelve a contactarlo, la oportunidad puede desaparecer.";
+
+            solucion =
+                "Un sistema de seguimiento y reactivación automática puede mantener el contacto con prospectos que todavía podrían convertirse en clientes.";
+
+        }
+
+
+        /*
+        ================================================
+        MEDICIÓN
+        ================================================
+        */
+
+        else if (
+            tieneProblema(problemas, "Medición de conversiones") &&
+            tieneProblema(problemas, "Visibilidad comercial")
+        ) {
+
+            titulo =
+                "Tu negocio necesita mayor visibilidad sobre dónde se pierden las ventas";
+
+            texto =
+                "El problema no necesariamente está únicamente en tus prospectos. Si no puedes saber cuántos llegan, cuántos avanzan y cuántos terminan comprando, es difícil identificar exactamente dónde está la fuga.";
+
+            solucion =
+                "Medir el recorrido de cada prospecto permite identificar dónde se están perdiendo oportunidades y tomar decisiones con información real.";
+
+        }
+
+
+        /*
+        ================================================
+        GENERAL
+        ================================================
+        */
+
+        else {
+
+            titulo =
+                "Detectamos varias áreas de oportunidad en tu proceso comercial";
+
+            texto =
+                "Tus respuestas muestran que existen varias etapas del proceso comercial que podrían estar generando pérdida de oportunidades. Esto significa que probablemente no existe una sola fuga, sino varios puntos donde un prospecto puede dejar de avanzar.";
+
+            solucion =
+                "La oportunidad está en crear un proceso más consistente para responder, entender, calificar y dar seguimiento a cada prospecto.";
+
+        }
+
+    }
+
+
+    return {
+
+        titulo: titulo,
+
+        texto: texto,
+
+        solucion: solucion,
+
+        areas: problemas.slice(0,5)
+
+    };
+
+}
+
+
+/* =====================================================
+   UTILIDAD
+===================================================== */
+
+function tieneProblema(lista, nombre) {
+
+    return lista.some(
+        problema => problema.nombre === nombre
+    );
+
+}
+
+
+/* =====================================================
+   MOSTRAR DIAGNÓSTICO
+===================================================== */
+
+function mostrarDiagnostico(data) {
+
+    document.getElementById("tituloResultado").textContent =
+        data.titulo;
+
+    document.getElementById("textoDiagnostico").textContent =
+        data.texto;
+
+    document.getElementById("textoSolucion").textContent =
+        data.solucion;
+
+
+    const contenedor =
+        document.getElementById("areasResultado");
+
+    contenedor.innerHTML = "";
+
+
+    data.areas.forEach(area => {
+
+        const elemento =
+            document.createElement("div");
+
+        elemento.className =
+            "area";
+
+        elemento.innerHTML = `
+
+            <strong>
+                ${area.nombre}
+            </strong>
+
+            <span>
+                ${area.texto}
+            </span>
+
+        `;
+
+        contenedor.appendChild(elemento);
+
+    });
+
+}
+
+
+/* =====================================================
+   GUARDAR CONTACTO
+===================================================== */
+
+async function guardarContacto(datosContacto) {
+
+    try {
+
+        const registro = {
+            id: Date.now(),
+            fecha: new Date().toLocaleString("es-MX"),
+            nombre: datosContacto.nombre,
+            telefono: datosContacto.telefono,
+            empresa: datosContacto.empresa,
+            respuestas: datosContacto.respuestas,
+            diagnostico: datosContacto.diagnostico,
+            areas: datosContacto.areas
+        };
+
+        const registrosActuales =
+            JSON.parse(localStorage.getItem(STORAGE_KEY) || "[]");
+
+        registrosActuales.push(registro);
+
+        localStorage.setItem(
+            STORAGE_KEY,
+            JSON.stringify(registrosActuales)
+        );
+
+        console.log("Cliente guardado:", registro);
+
+    } catch (error) {
+
+        console.error(
+            "Error guardando contacto:",
+            error
+        );
+
+    }
+}
+
+/* =====================================================
+   FINAL
+===================================================== */
+
+terminar.addEventListener("click", function() {
+
+    resultado.style.display = "none";
+
+    final.style.display = "block";
+
+    window.scrollTo({
+
+        top: 0,
+
+        behavior: "smooth"
+
+    });
+
+});
+
+</script>
+
+</body>
+</html>    margin-top: 25px;
+}
+
+.descripcion {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 28px;
+}
+
+/* =========================
+   PROGRESO
+========================= */
+
+.progreso {
+    height: 6px;
+    width: 100%;
+    background: #e8e8ec;
+    border-radius: 10px;
+    margin-bottom: 28px;
+    overflow: hidden;
+}
+
+.progreso-barra {
+    height: 100%;
+    width: 25%;
+    background: #6735ff;
+    transition: .3s;
+}
+
+/* =========================
+   OPCIONES
+========================= */
+
+.opciones {
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+}
+
+.opcion {
+    position: relative;
+}
+
+.opcion input {
+    position: absolute;
+    opacity: 0;
+}
+
+.opcion label {
+    display: flex;
+    align-items: flex-start;
+    gap: 13px;
+    padding: 16px;
+    border: 1.5px solid #dedee5;
+    border-radius: 13px;
+    cursor: pointer;
+    transition: .2s;
+    line-height: 1.45;
+}
+
+.opcion label:hover {
+    border-color: #6735ff;
+    background: #faf9ff;
+}
+
+.opcion input:checked + label {
+    border-color: #6735ff;
+    background: #f4f0ff;
+}
+
+.check {
+    width: 21px;
+    height: 21px;
+    min-width: 21px;
+    border: 2px solid #c8c8d0;
+    border-radius: 6px;
+    position: relative;
+}
+
+.opcion input:checked + label .check {
+    background: #6735ff;
+    border-color: #6735ff;
+}
+
+.opcion input:checked + label .check::after {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 10px;
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    transform: rotate(45deg);
+    left: 6px;
+    top: 3px;
+}
+
+/* =========================
+   FORMULARIO
+========================= */
+
+.campo {
+    margin-bottom: 17px;
+}
+
+.campo label {
+    display: block;
+    font-weight: 700;
+    margin-bottom: 7px;
+    font-size: 14px;
+}
+
+.campo input {
+    width: 100%;
+    padding: 15px;
+    border: 1.5px solid #dedee5;
+    border-radius: 11px;
+    font-size: 15px;
+    outline: none;
+}
+
+.campo input:focus {
+    border-color: #6735ff;
+}
+
+/* =========================
+   BOTONES
+========================= */
+
+.btn {
+    width: 100%;
+    border: none;
+    background: #6735ff;
+    color: #fff;
+    padding: 16px;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 12px;
+    transition: .2s;
+}
+
+.btn:hover {
+    background: #5225df;
+}
+
+.btn:disabled {
+    opacity: .5;
+    cursor: not-allowed;
+}
+
+.btn-secundario {
+    background: transparent;
+    color: #6735ff;
+    margin-top: 8px;
+}
+
+/* =========================
+   MENSAJES
+========================= */
+
+.error {
+    display: none;
+    color: #d93025;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* =========================
+   LOADING
+========================= */
+
+#loading {
+    display: none;
+    text-align: center;
+}
+
+.spinner {
+    width: 45px;
+    height: 45px;
+    border: 4px solid #e5e5e5;
+    border-top: 4px solid #6735ff;
+    border-radius: 50%;
+    animation: girar 1s linear infinite;
+    margin: 25px auto;
+}
+
+@keyframes girar {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.loading-text {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* =========================
+   DIAGNÓSTICO
+========================= */
+
+#resultado {
+    display: none;
+}
+
+.diagnostico {
+    background: #f4f0ff;
+    border-left: 4px solid #6735ff;
+    padding: 20px;
+    border-radius: 12px;
+    line-height: 1.6;
+}
+
+.areas {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.area {
+    background: #f7f7f8;
+    padding: 14px;
+    border-radius: 10px;
+}
+
+.area strong {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* =========================
+   SOLUCIÓN
+========================= */
+
+.solucion {
+    margin-top: 25px;
+    background: #171717;
+    color: #fff;
+    padding: 25px;
+    border-radius: 15px;
+}
+
+.solucion h3 {
+    margin-top: 0;
+}
+
+.solucion p {
+    color: #ddd;
+    line-height: 1.6;
+}
+
+/* =========================
+   FINAL
+========================= */
+
+#final {
+    display: none;
+    text-align: center;
+}
+
+.final-icono {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.final-texto {
+    color: #666;
+    line-height: 1.7;
+}
+
+/* =========================
    MOBILE
 ========================= */
 
